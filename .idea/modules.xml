@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/sneaker-drop-alert.iml" filepath="$PROJECT_DIR$/.idea/sneaker-drop-alert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sneaker-parent/sneaker-parent.iml" filepath="$PROJECT_DIR$/sneaker-parent/sneaker-parent.iml" />
     </modules>
   </component>
 </project>
