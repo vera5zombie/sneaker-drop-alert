@@ -1,27 +1,20 @@
 package com.sneakerdrop.controller;
 
-import com.sneakerdrop.service.NikeService;
+import com.sneakerdrop.service.SneakerSiteService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/v1/sneakerdropalert")
 public class SneakerDropAlertController {
 
-    private NikeService nikeService;
+    private SneakerSiteService sneakerSiteService;
 
-    @GetMapping("hello")
-    public ResponseEntity<String> helloWorld() {
-        return ResponseEntity.ok("Hello World");
-    }
-
-    @GetMapping("/get-nike-data")
-    public ResponseEntity<String> getSites() {
-        String s = nikeService.getNikeData();
+    @GetMapping("/sites")
+    public ResponseEntity<List<String>> getSites() {
+        List<String> s = sneakerSiteService.getSites();
         return ResponseEntity.ok(s);
     }
 
@@ -30,11 +23,10 @@ public class SneakerDropAlertController {
         return ResponseEntity.ok("Registration successful for site: " + site_code + " with email: " + email_address);
     }
 
-    @PostMapping("/unsubscribe/{site_code}")
+    @PostMapping("/unsubscription/{site_code}")
     public ResponseEntity<String> unsubscribe(@PathVariable String site_code, @RequestParam String email_address) {
         return ResponseEntity.ok("hello unsubscribe");
     }
-
 
 }
 
