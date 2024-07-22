@@ -1,2 +1,8 @@
-package com.sneakerdrop.datamodel;public class Product {
+package com.sneakerdrop.datamodel;
+
+public class Product {
+    /*
+    fill in attributes
+     */
+
 }

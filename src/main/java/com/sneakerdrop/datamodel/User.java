@@ -1,4 +1,8 @@
 package com.sneakerdrop.datamodel;
 
-public class Email {
+public class User {
+     /*
+    fill in attributes
+     */
 }
+

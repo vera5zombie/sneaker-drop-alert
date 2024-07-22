@@ -1,2 +1,4 @@
-package com.sneakerdrop.respoitory;public interface ProductRepository {
+package com.sneakerdrop.respoitory;
+
+public interface ProductRepository {
 }
