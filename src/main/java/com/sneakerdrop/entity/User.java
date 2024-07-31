@@ -24,7 +24,6 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private String siteId;
 
     @OneToMany(mappedBy = "user")
     private Set<Product> products;

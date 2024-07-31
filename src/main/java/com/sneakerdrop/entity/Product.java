@@ -13,16 +13,14 @@ import lombok.AllArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "products")
 public class Product {
     @Id
     private String productId;
-    private String siteId;
     private String productName;
     private Boolean inStock;
 
     @ManyToOne
-    @JoinColumn(name = "userId")
+    @JoinColumn(name = "user_id") // Ensure this matches the column name in the database
     private User user;
 }
 

@@ -1,6 +1,7 @@
 package com.sneakerdrop.controller;
 
 import com.sneakerdrop.service.SneakerSiteService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +11,7 @@ import java.util.List;
 @RequestMapping("/v1/sneakerdropalert")
 public class SneakerDropAlertController {
 
+    @Autowired
     private SneakerSiteService sneakerSiteService;
 
     @GetMapping("/sites")
