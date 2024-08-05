@@ -16,7 +16,7 @@ public class SneakerSiteService {
 
     public List<String> getSites(){
 
-        return null;
+        return List.of("Site1", "Site2", "Site3");
     }
 
 
